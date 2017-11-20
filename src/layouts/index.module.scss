@@ -1,0 +1,23 @@
+@import '../stylesheets/index';
+@import '../stylesheets/mixins';
+
+.main {
+  display: flex;
+}
+
+.article {
+  flex: 1 1 span(12 of 16);
+}
+
+.sidebar {
+  flex: 1 1 span(4 of 16);
+  background: #ededed;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+  padding: $global-spacing * 2.5;
+  padding-top: $global-spacing * 10;
+
+  @include media('<desktop') {
+    display: none;
+  }
+}
+

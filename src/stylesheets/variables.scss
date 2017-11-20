@@ -1,0 +1,26 @@
+$font-family-serif: 'Noticia Text', Georgia, sans-serif;
+$font-family-sans-serif: 'Nunito', Avenir Next, sans-serif;
+$font-family-monospace: 'Fira Code', Menlo, Monaco;
+
+$color-black-russian: #383838;
+$color-school-bus-yellow: #f7d92e;
+$color-cornflower-blue: #5197EC;
+$color-light-grey: #5d5f64;
+
+$page-background-color: #f6f6f6;
+
+$text-color-link: transparentize($color-school-bus-yellow, 0.1);
+$text-color-subtext: $color-light-grey;
+
+$global-spacing: 10px;
+
+$font-size-code: 13.5px;
+$font-size-sm: 15px;
+$font-size-reg: 18px;
+$font-size-md: 19px;
+$font-size-lg: 30px;
+$font-size-xl: 40px;
+
+$max-width-readable: 600px;
+
+$icon-size: 24px;

@@ -1,0 +1,137 @@
+@import './variables';
+
+$bg-color: #242a33;
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-size: $font-size-code;
+  color: #D9D7CE; /* base00 */
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  line-height: 2;
+  tab-size: 2;
+
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  code {
+    max-width: $max-width-readable;
+    margin: auto;
+    display: block;
+  }
+}
+
+pre[class*="language-json"],
+pre[class*="language-html"],
+pre[class*="language-svg"],
+pre[class*="language-xml"] {
+  color: #5C6773;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: rgba(255,255,255,0.08); /* base02 */
+  color: inherit;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: rgba(255,255,255,0.08); /* base02 */
+  color: inherit;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: $bg-color; /* base3 */
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #5C6773; /* base1 */
+}
+
+.token.punctuation {
+  color: #D9D7CE; /* base01 */
+}
+
+.token.operator {
+  color: #F29E74;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.tag {
+  color: #5CCFE6;
+}
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #D4BFFF; /* blue */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: #BAE67E; /* cyan */
+}
+
+.token.entity {
+  color: #73D0FF; /* base00 */
+  background: #eee8d5; /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #FFA759; /* green */
+}
+
+.token.function {
+  color: #FFD580; /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #95E6CB; /* orange */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}

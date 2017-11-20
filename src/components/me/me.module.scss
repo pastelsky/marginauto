@@ -1,0 +1,35 @@
+@import '../../stylesheets/variables';
+@import '../../stylesheets/mixins';
+
+.meContainer {
+  a {
+    @include link-text;
+  }
+}
+
+.myFace {
+  width: 200px;
+  max-width: 100%;
+}
+
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+  margin-right: $global-spacing;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.socialList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.socialContact {
+  margin-bottom: $global-spacing;
+  display: flex;
+  align-items: center;
+}

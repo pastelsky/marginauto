@@ -1,0 +1,36 @@
+@import '../../node_modules/sanitize.css';
+@import '../../node_modules/susy/sass/susy';
+@import '../../node_modules/include-media/dist/include-media';
+@import './variables.scss';
+@import './prism';
+
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'desktop': 1024px
+);
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: $font-family-sans-serif;
+  color: $color-black-russian;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-serif;
+}
+
+p {
+  line-height: 1.7;
+  font-size: $font-size-reg;
+}
+
+code {
+  font-family: $font-family-monospace;
+}
+
+
+
